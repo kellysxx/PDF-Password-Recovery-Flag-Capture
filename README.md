@@ -1,98 +1,74 @@
 # 🔐 PDF Password Recovery & Flag Capture
 
-## 1. Project Overview
+## Project Overview
 
-This project documents a practical cybersecurity challenge completed during my training with **Networkwalks Academy**.
+This project documents a practical PDF password recovery exercise completed as part of my cybersecurity learning journey. The objective was to explore different methods of extracting PDF password hashes and recovering passwords through dictionary-based attacks.
 
-The objective was to investigate a password-protected PDF document, extract its password hash, use John the Ripper to attempt password recovery, and successfully access the document to capture the challenge flag.
+## Objectives
 
-This exercise provided hands-on experience with password security, hash extraction, and password auditing techniques.
+- Understand how password-protected PDF files work.
+- Extract PDF password hashes using different tools.
+- Perform dictionary-based password recovery.
+- Capture the challenge flag after successfully completing the exercise.
 
-## 2. Objectives
+## Tools and Methods Used
 
-- Identify a password-protected PDF document.
-- Extract the PDF password hash.
-- Use John the Ripper to attempt password recovery.
-- Access the protected PDF document.
-- Successfully capture the challenge flag.
-- Document the investigation process and findings.
+1. Networkwalks Free Tools
+   - Hash Calculator
+   - Password Cracker (Dictionary Attack)
 
-## 3. Tools and Technologies
+2. PDF Hash Extractor Website
 
-| Tool | Purpose |
-|---|---|
-| Kali Linux | Cybersecurity testing environment |
-| PDF Hash Extractor | Extracting the PDF password hash |
-| John the Ripper | Password recovery and auditing |
-| Wordlist | Testing possible password combinations |
+3. John the Ripper
 
-## 4. Methodology
+## Methodology
 
-### Step 1: Identifying the Locked PDF
+### Method 1: Networkwalks Free Tools
 
-I received a password-protected PDF document as part of the cybersecurity challenge. The document required a password before its contents could be accessed.
+For the first approach, I used the free tools provided by Networkwalks.
 
-### Step 2: Extracting the PDF Hash
+**Step 1: Hash Calculator**
 
-I used an online PDF Hash Extractor website to extract the password hash from the protected PDF document.
+I used the Networkwalks Hash Calculator to process the password-protected PDF and obtain the hash required for the recovery process.
 
-The extracted hash was prepared for analysis using John the Ripper.
+**Step 2: Password Cracker – Dictionary Attack**
 
-### Step 3: Password Recovery Using John the Ripper
+I used the Networkwalks Password Cracker to perform a dictionary-based attack. The tool tested password candidates from a dictionary against the extracted hash to attempt password recovery.
 
-I used John the Ripper in Kali Linux to perform a password recovery attempt against the extracted hash.
+### Method 2: PDF Hash Extractor and John the Ripper
 
-This demonstrated how password-auditing tools use candidate passwords and wordlists to test password hashes.
+For the second approach, I used a separate PDF hash extraction website and John the Ripper.
 
-### Step 4: Accessing the Protected PDF
+**Step 1: PDF Hash Extraction**
 
-After successfully recovering the password, I used it to unlock and access the challenge PDF.
+I uploaded the protected PDF to a PDF Hash Extractor website to obtain its password hash.
 
-### Step 5: Capturing the Flag
+**Step 2: Password Recovery with John the Ripper**
 
-After accessing the document, I located the challenge flag and successfully captured Flag 1.
+I used John the Ripper to perform a dictionary-based password recovery process. It tested candidate passwords from a wordlist against the extracted hash.
 
-This confirmed that I had completed the challenge successfully.
+## Results and Evidence
 
-## 5. Evidence and Screenshots
+The exercise provided practical experience with two different PDF password recovery approaches.
 
-The following screenshots will document the practical steps performed during the challenge:
+Screenshots of the process and challenge completion can be added to the `screenshots/` folder.
 
-- Original password-protected PDF.
-- PDF Hash Extractor website.
-- John the Ripper password recovery process.
-- Successful flag capture confirmation.
+## Skills Learned
 
-## 6. Skills Demonstrated
+- PDF hash extraction
+- Password recovery techniques
+- Dictionary-based password attacks
+- Using online cybersecurity tools
+- Practical use of John the Ripper
+- Understanding password security and weak passwords
+- Documenting cybersecurity lab exercises
 
-- Kali Linux command-line operations.
-- PDF password hash extraction.
-- John the Ripper usage.
-- Password auditing techniques.
-- Dictionary-based password recovery.
-- Cybersecurity investigation and documentation.
-- Problem-solving and technical analysis.
+## Conclusion
 
-## 7. Lessons Learned
+This exercise helped me understand how PDF password hashes can be extracted and how dictionary attacks can be used in password recovery. Using two different approaches improved my practical understanding of password security tools and techniques.
 
-Through this challenge, I gained a better understanding of how password-protected PDF documents work, how password hashes can be extracted, and how tools such as John the Ripper can be used for authorized password auditing.
+## Disclaimer
 
-I also learned the importance of strong passwords and secure password management.
+This project was completed for educational and cybersecurity training purposes in an authorized lab environment. These techniques should only be used on files you own or have explicit permission to test.
 
-## 8. Conclusion
 
-This practical exercise strengthened my cybersecurity knowledge and provided valuable experience working with password recovery tools in Kali Linux.
-
-It was another important step in my cybersecurity learning journey.
-
-## 9. Training Credit
-
-**Training Provider:** Networkwalks Academy
-
-**Challenge:** PDF Password Recovery and Flag Capture
-
----
-
-**Disclaimer:** This project is for educational purposes and documents activities performed within an authorized cybersecurity training environment. Password recovery techniques should only be used on files you own or have permission to test.
-
-*Note: Actual passwords and challenge flags are intentionally excluded from this public documentation.*
