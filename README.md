@@ -52,7 +52,18 @@ I used John the Ripper to perform a dictionary-based password recovery process. 
 The exercise provided practical experience with two different PDF password recovery approaches.
 
 Screenshots of the process and challenge completion can be added to the `screenshots/` folder.
-
+PDF-Password-Recovery-Flag-Capture/
+│
+├── README.md
+│
+└── screenshots/
+    ├── 01-networkwalks-hash-calculator.png
+    ├── 02-networkwalks-password-cracker.png
+    ├── 03-pdf-hash-extractor.png
+    ├── 04-john-the-ripper.png
+    ├── 05-password-recovery-result.png
+    ├── 06-opened-after-recovery.png
+    └── 07-flag-captured.png
 ## Skills Learned
 
 - PDF hash extraction
